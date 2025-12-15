@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - HTML</title>
+</head>
+<style>
+    /* Style the table itself */
+table {
+  width: 100%;             /* Full width */
+  border-collapse: collapse; /* Remove space between borders */
+  border: 1px solid #ccc;  /* Light border around table */
+  font-family: Arial, sans-serif; /* Font for table */
+  background-color: #f9f9f9; /* Table background color */
+}
+
+/* Style table headers */
+th {
+  background-color: #4CAF50; /* Green header background */
+  color: white;              /* White text */
+  padding: 10px;             /* Space inside header cells */
+  text-align: left;          /* Align text to left */
+  border: 2px solid black;    /* Border around header cells */
+}
+
+/* Style table cells */
+td {
+  padding: 8px;              /* Space inside cells */
+  border: 2px solid black;    /* Border around cells */
+  text-align: left;          /* Align text to left */
+}
+
+/* Zebra striping for rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #e0e0e0; /* Darker gray on hover */
+}
+
+/* Optional: Style caption */
+caption {
+  caption-side: top;          /* Place caption at top */
+  font-size: 1.2em;           /* Slightly bigger font */
+  font-weight: bold;           /* Bold text */
+  margin-bottom: 10px;        /* Space below caption */
+}
+
+</style>
+<body>
+    <h1>Tables in HTML: </h1>
+    <!-- Head of the table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name: </th>
+                <th>ID: </th>
+                <th>Section: </th>
+            </tr>
+        </thead>
+        <!-- Body of the table -->
+        <tbody>
+            <tr>
+                <td>Krishna</td>
+                <td>201240</td>
+                <td>Padma</td>
+            </tr>
+            <tr>
+                <td>Rife</td>
+                <td>201231</td>
+                <td>Padma</td>
+            </tr>
+            <tr>
+                <td>Aditto</td>
+                <td>201201</td>
+                <td>Padma</td>
+            </tr>
+            <tr>
+                <td>Rimon</td>
+                <td>201204</td>
+                <td>Padma</td>
+            </tr>
+            <tr>
+                <td>Saim</td>
+                <td>201211</td>
+                <td>Padma</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

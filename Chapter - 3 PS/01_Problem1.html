@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD KING - Food delivery at your doorstep</title>
+
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Make footer stay at bottom */
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background: #fff5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #cc0000;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            position: relative; /* required for underline animation */
+        }
+
+        /* Hover underline animation */
+        header a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            width: 0%;
+            background-color: white;
+            transition: width 0.3s;
+        }
+
+        header a:hover::after {
+            width: 100%;
+        }
+
+        /* Main Section */
+        main {
+            flex: 1; /* Push footer down */
+            padding: 40px 20px;
+        }
+
+        main h2 {
+            color: #cc0000;
+            margin-bottom: 15px;
+        }
+
+        main p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>FOOD KING</h1>
+        </div>
+        <div>
+            <a href="/home">Home</a>
+            <a href="/about">About us</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <h2>Order food anytime, anywhere</h2>
+        </div>
+        <p>
+            Fast food delivery in Dhaka.
+            As the bustling capital of Bangladesh, it's no wonder that Dhaka's culinary scene is something special.
+            This cultural hub offers plenty in the way of delicious dishes, from authentic Bangladesh recipes perfected over generations, to fabulous fusion dishes.
+            With foodpanda, you've easy access to this diverse dining scene, with straightforward online ordering and express delivery.
+        </p>
+    </main>
+
+    <footer>
+        <div>
+            Copyright FOOD KING. All rights reserved
+        </div>
+    </footer>
+</body>
+</html>
